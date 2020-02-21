@@ -1,6 +1,6 @@
 # Projeto 
 - Hotiste para aula de Práticas de Design da Fatec.
-- Colaboração entre @carolinakaji e @lucas
+- Colaboração entre @carolinakaji e @
 
 # Overview
 - O conteúdo desenvolvido é meramente acadêmico. Não há parcerias com a rádio em questão.
