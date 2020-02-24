@@ -1,31 +1,13 @@
 @charset "utf-8";
 
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2em;
-}
-
-#sobre {
-  padding: 20px 0;
-  margin-top: 0;
-  border: none;
-  background-color: #000;
-  color: #ddd;
-}
-
-#sobre p {
-  font-size: 1.3em;
-  line-height: 1.5;
-  margin: 5% auto;
-  letter-spacing: .04em;
-  width: 80%;
 }
 
 a {
@@ -36,7 +18,6 @@ a {
   text-align: right;
   margin: 0 20px;
   position: relative;
-
 }
 
 #navbar ul li {
@@ -55,12 +36,33 @@ a {
   padding: 10px 15px;
 }
 
-#navbar ul li a:hover {
+#navbar ul li a:hover,
+small a:hover {
   color: #e31214;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+#sobre {
+  padding: 20px 0;
+  background-color: #000;
+  color: #ddd;
+}
+
+#sobre p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: .04em;
+  width: 80%;
 }
 
 .bgInclinadoDecrescente {
@@ -69,8 +71,6 @@ a {
   width: 100%;
   height: 100px;
   position: absolute;
-  /* top: -10px; */
-  z-index: -5;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
 }
@@ -79,10 +79,10 @@ a {
   background: #000;
   width: 100%;
   height: 100px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
   position: relative;
   /* top: -10px; */
-  z-index: -5;
+  /* z-index: -5; */
   -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
 }
@@ -93,8 +93,6 @@ a {
 
 .imagemPrincipal {
   position: relative;
-  z-index: -10;
-  /* height: 78vh; */
   width: 100%;
 }
 
@@ -103,32 +101,55 @@ img {
   margin: 2% auto;
 }
 
+#bandas h2 {
+  margin-bottom: 5%;
+}
+
 #bandas h3 {
   text-align: center;
 }
 
 #bandas {
   width: 80%;
-  margin: 0 auto;
-  height: 300px;
-  background: sandybrown;
+  margin: 0 auto 5%;
+  height: 700px;
+}
+
+#bandas ul li {
+  list-style: none;
+  margin: 1em 3em; 
 }
 
 .dia1 {
   float: left;
   text-decoration: center;
-  height: 200px;
-  background: springgreen;
+  border-right: 1px dashed #333;
   width: 50%;
+  /* background: lime; */
+  height: 100%;
 }
 
 .dia2 {
   width: 50%;
   height: 200px;
   float: right;
-  background: lightslategrey;
-
 }
 
 
-footer {}
+footer {
+  padding: 20px 0;
+  border: none;
+  background-color: #000;
+  color: #ddd;
+}
+
+small {
+  display: block;
+  text-align: center;
+  font-size: .8em;
+  letter-spacing: .05em;
+}
+
+small a {
+  color: #ddd;
+}
