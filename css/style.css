@@ -16,7 +16,13 @@ a {
 a:visted {
   color: #fdeb13;
 }
-
+header {
+  background: #000;
+  margin: 0;
+  height: 100px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
 #navbar ul {
   text-align: right;
   margin: 0 20px;
@@ -57,8 +63,7 @@ h2 {
   padding: 150px 0;
   background-color: #000;
   color: #ddd;
-  /* height: */
-  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0); */
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
 }
 
@@ -69,28 +74,6 @@ h2 {
   margin-right: auto;
   letter-spacing: .04em;
   width: 80%;
-}
-
-.bgInclinadoDecrescente {
-  background: #000;
-  margin: 0;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
-}
-
-.bgInclinadoCrescente {
-  background: #000;
-  width: 100%;
-  height: 100px;
-  border-bottom: 1px solid #000;
-  position: relative;
-  /* top: -10px; */
-  /* z-index: -5; */
-  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
 }
 
 .positionRelative {
@@ -148,9 +131,26 @@ img {
 
 footer {
   padding: 20px 0;
-  border: none;
   background-color: #000;
   color: #ddd;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+footer section {
+  width: 100%;
+ padding: 20px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer section p {
+  align-self: center;
+  text-align: right;
+  grid-column: span 2;
+}
+
+.redColor {
+  color: #e31214;
 }
 
 small {
@@ -165,11 +165,57 @@ small a, footer a {
 }
 
 footer a:hover {
-  color: red;
+  color: #e31214;
 }
 
 footer ul li {
   list-style: none;
   font-size: 1.2em; 
   line-height: 2;
+}
+
+/* Cadastro */
+
+.textoCentralizado {
+  text-align: center;
+}
+
+
+.cadastroForm {
+  margin: 0 auto 50px;
+  width: 70%;
+  
+}
+form label, form input {
+  margin-left: 50px;
+}
+form input[name="rg"], form input[name="cpf"] {
+  width: 200px;
+}
+
+form {
+  line-height: 2em;
+}
+label {
+  display: block;
+}
+form input[type="text"], input[name="nascimento"], input[type="email"],input[type="tel"]  {
+  width: 250px;
+}
+
+form input[name="rgDigito"], form input[name="cpfDigito"] {
+  width: 3em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+.cadastroForm fomr fieldset {
+  margin-bottom: 100px;
+  /* line-height: 2;  */
+}
+
+.cadastroForm form fieldset label, .cadastroForm form fiedset input {
+  display: inline;
+  margin: 0;
+
 }
