@@ -13,6 +13,9 @@ body {
 a {
   text-decoration: none;
 }
+a:visted {
+  color: #fdeb13;
+}
 
 #navbar ul {
   text-align: right;
@@ -51,9 +54,12 @@ h2 {
 }
 
 #sobre {
-  padding: 20px 0;
+  padding: 150px 0;
   background-color: #000;
   color: #ddd;
+  /* height: */
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0); */
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
 }
 
 #sobre p {
@@ -114,10 +120,14 @@ img {
   margin: 0 auto 5%;
   height: 700px;
 }
+#bandas ul {
+  margin: 0;
+  padding: 0;
+}
 
 #bandas ul li {
   list-style: none;
-  margin: 1em 3em; 
+  /* margin: 1em 3em;  */
 }
 
 .dia1 {
@@ -150,6 +160,16 @@ small {
   letter-spacing: .05em;
 }
 
-small a {
+small a, footer a {
   color: #ddd;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 1.2em; 
+  line-height: 2;
 }
