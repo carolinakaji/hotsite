@@ -117,13 +117,13 @@ img {
   float: left;
   text-decoration: center;
   border-right: 1px dashed #333;
-  width: 50%;
+  width: 49%;
   /* background: lime; */
   height: 100%;
 }
 
 .dia2 {
-  width: 50%;
+  width: 49%;
   height: 200px;
   float: right;
 }
@@ -315,3 +315,14 @@ label[for="checkboxRegulamento"] {
 input[id="checkboxRegulamento"] {
   margin: 0;
 }
+
+/*Teste de imagens */
+
+.banda_01 {
+  float: left;
+}
+
+.banda_02 {
+  float: right;
+}
+
