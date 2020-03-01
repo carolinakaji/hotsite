@@ -209,13 +209,85 @@ form input[name="rgDigito"], form input[name="cpfDigito"] {
   text-align: center;
 }
 
-.cadastroForm fomr fieldset {
-  margin-bottom: 100px;
+.cadastroForm form fieldset {
+  margin-bottom: 50px;
   /* line-height: 2;  */
 }
 
 .cadastroForm form fieldset label, .cadastroForm form fiedset input {
   display: inline;
   margin: 0;
+}
 
+/* Regulamento */
+#regulamento {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /* visibility: visible; */
+}
+
+#regulamento-bg-branco {
+  overflow: auto;
+  background: #fff;
+  height: 80%;
+  width: 50%;
+  margin: 5% auto;
+  position: relative;
+  padding: 20px 40px;
+}
+
+#regulamento-bg-branco h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#regulamento-bg-branco p {
+  line-height: 1.5;
+}
+
+#fechaContainer {
+  position: absolute;
+  margin-top: 5%; 
+  margin-right: 80%;
+  width: 40px;
+  height: 40px;
+  background: #fca7a7;
+  z-index: 1;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+#fechaContainer #fecha {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height:3px;
+  background: black;
+  background: transparent;
+}
+
+#fechaContainer #fecha:before, 
+#fechaContainer #fecha:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: yellow;
+
+}
+
+#fechaContainer #fecha:before {
+  transform: rotate(45deg);
+}
+
+#fechaContainer #fecha:after {
+  transform: rotate(135deg);
+}
+
+#linkRegulamento {
+  cursor: pointer;
 }
