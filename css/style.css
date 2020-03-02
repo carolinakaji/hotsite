@@ -13,9 +13,22 @@ body {
 a {
   text-decoration: none;
 }
+
 a:visted {
   color: #fdeb13;
 }
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Navegação */
+
 header {
   background: #000;
   margin: 0;
@@ -34,7 +47,6 @@ header {
   padding: 30px 5px;
 }
 
-
 #navbar ul li a {
   font-size: 1em;
   font-weight: bold;
@@ -50,14 +62,7 @@ small a:hover {
   color: #e31214;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2em;
-}
+/* Sobre */
 
 #sobre {
   padding: 150px 0;
@@ -76,18 +81,29 @@ h2 {
   width: 80%;
 }
 
-.positionRelative {
-  position: relative;
+
+/* Bandas */
+
+.banda_01 {
+  float: left;
 }
 
-.imagemPrincipal {
-  position: relative;
-  width: 100%;
+.banda_02 {
+  float: right;
 }
 
-img {
-  display: block;
-  margin: 2% auto;
+.dia1 {
+  float: left;
+  text-decoration: center;
+  border-right: 1px dashed #333;
+  width: 49%;
+  height: 100%;
+}
+
+.dia2 {
+  width: 49%;
+  height: 200px;
+  float: right;
 }
 
 #bandas h2 {
@@ -96,6 +112,7 @@ img {
 
 #bandas h3 {
   text-align: center;
+
 }
 
 #bandas {
@@ -110,24 +127,20 @@ img {
 
 #bandas ul li {
   list-style: none;
-  /* margin: 1em 3em;  */
+}
+/* Imagem principal */
+
+.imagemPrincipal {
+  position: relative;
+  width: 100%;
 }
 
-.dia1 {
-  float: left;
-  text-decoration: center;
-  border-right: 1px dashed #333;
-  width: 49%;
-  /* background: lime; */
-  height: 100%;
+img {
+  display: block;
+  margin: 1% auto 2%;
 }
 
-.dia2 {
-  width: 49%;
-  height: 200px;
-  float: right;
-}
-
+/* Footer */
 
 footer {
   padding: 20px 0;
@@ -180,27 +193,40 @@ footer ul li {
   text-align: center;
 }
 
-
 .cadastroForm {
   margin: 0 auto 50px;
-  width: 70%;
-  
+  width: 45%;
 }
+
+.cadastroForm h3 {
+  font-size: 1.4em;
+}
+legend {
+  font-size: 1.1em;
+}
+
 form label, form input {
-  margin-left: 50px;
+  margin-left: 30px;
 }
+
 form input[name="rg"], form input[name="cpf"] {
   width: 200px;
+  height: 3em;
 }
 
 form {
   line-height: 2em;
 }
+
 label {
   display: block;
+  margin-top: 1em;
+  font-size: 1.1em;
 }
+
 form input[type="text"], input[name="nascimento"], input[type="email"],input[type="tel"]  {
-  width: 250px;
+  width: 90%;
+  height: 3em;
 }
 
 form input[name="rgDigito"], form input[name="cpfDigito"] {
@@ -210,14 +236,53 @@ form input[name="rgDigito"], form input[name="cpfDigito"] {
 }
 
 .cadastroForm form fieldset {
-  margin-bottom: 50px;
-  /* line-height: 2;  */
+  margin-bottom: 30px;
 }
 
 .cadastroForm form fieldset label, .cadastroForm form fiedset input {
   display: inline;
   margin: 0;
 }
+.listaAlfabeto {
+  list-style: lower-latin;
+}
+
+.listaAlfabeto input {
+  margin-left: .5em ;
+}
+
+#linkRegulamento {
+  cursor: pointer;
+  color: #2d2dd8;
+}
+
+#linkRegulamento:hover {
+  color: #e31214;
+  cursor: pointer;
+}
+
+#cadastrar {
+  display: block;
+  padding: 10px 40px;
+  background: #57e080;
+  color: #3c3c3c;
+  font-size: 1.2em;
+  border: none;
+  margin: 10px 0;
+}
+
+label[for="checkboxRegulamento"] {
+  display: inline-block;
+  margin-left: .5em; 
+  margin-top: 0;
+}
+
+
+input[id="checkboxRegulamento"] {
+  margin: 0;
+}
+
+
 
 /* Regulamento */
 #regulamento {
@@ -286,43 +351,3 @@ form input[name="rgDigito"], form input[name="cpfDigito"] {
 #fechaContainer #fecha:after {
   transform: rotate(135deg);
 }
-
-#linkRegulamento {
-  cursor: pointer;
-  color: #2d2dd8;
-}
-
-#linkRegulamento:hover {
-  color: #e31214;
-  cursor: pointer;
-}
-
-#cadastrar {
-  display: block;
-  padding: 10px 40px;
-  background: #57e080;
-  color: #3c3c3c;
-  font-size: 1.2em;
-  border: none;
-  margin: 10px 0;
-}
-
-label[for="checkboxRegulamento"] {
-  display: inline-block;
-  margin-left: .5em; 
-}
-
-input[id="checkboxRegulamento"] {
-  margin: 0;
-}
-
-/*Teste de imagens */
-
-.banda_01 {
-  float: left;
-}
-
-.banda_02 {
-  float: right;
-}
-
