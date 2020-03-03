@@ -25,26 +25,26 @@
 
   <h1 class="textoCentralizado">Cadastro</h1>
   <section class="cadastroForm">
-    <form action="index.html" method="POST">
+    <form action="" method="POST">
       <h3>Dados pessoais:</h3>
       <label for="nome">Nome completo:</label>
-      <input type="text" placeholder="ex: João Valentão">
+      <input type="text" placeholder="ex: João Valentão" id="nomeCompleto">
       <label for="nascimento">Data de nascimento:</label>
-      <input type="date" name="nascimento">
+      <input type="date" name="nascimento" id="nascimento">
       <label for="rg">RG:</label>
-      <input type="number" name="rg" placeholder="ex: 584750799"><input type="text" name="rgDigito" placeholder="X">
+      <input type="number" name="rg" placeholder="ex: 584750799" id="rgNumero"><input type="text" name="rgDigito" placeholder="X" id="rgDigito">
       <label for="cpf">CPF:</label>
-      <input type="number" name="cpf" placeholder="ex: 550547985"><input type="text" name="cpfDigito" placeholder="XX">
+      <input type="number" name="cpf" placeholder="ex: 550547985" id="cpfNumero"><input type="text" name="cpfDigito" placeholder="XX" id="cpfDigito">
       <label for="endereco">Endereço:</label>
-      <input type="text" placeholder="ex: Rua dos Roqueiros, 548">
+      <input type="text" placeholder="ex: Rua dos Roqueiros, 548" id="endereco">
       <label for="endereco">Complemento:</label>
-      <input type="text" placeholder="ex: Bloco 1, apto 195">
+      <input type="text" placeholder="ex: Bloco 1, apto 195" id="enderecoComplemento">
       
       <h3>Informações para contato</h3>
       <label for="email">E-mail:</label>
-      <input type="email" name="email" placeholder="ex: joao.valentao@email.com.br">
+      <input type="email" name="email" placeholder="ex: joao.valentao@email.com.br" id="email">
       <label for="telefone">Telefone:</label>
-      <input type="tel" name="telefone" placeholder="ex: (11) 998545471">
+      <input type="tel" name="telefone" placeholder="ex: (11) 998545471" id="telefone">
       
       <h3>Quiz</h3>
       <!-- Pergunta 01 -->
@@ -61,7 +61,7 @@
 
       <!-- Pergunta 02 -->
       <fieldset>
-        <legend><strong>02.</strong> Qual é o nome do #7, membro da banda Slipnot?</legend>
+        <legend><strong>02.</strong> Qual é o nome do #7, membro da banda Slipknot?</legend>
         <ul class="listaAlfabeto">
           <li> <input type="radio" name="pergunta2" value="resposta 2" id="pergunta2"><label for="pergunta2">Corey Taylor</label></li>
           <li><input type="radio" name="pergunta2" value="resposta 2" id="pergunta2"><label for="pergunta2">Mickael Gordon Thomson</label></li>
@@ -108,9 +108,35 @@
       </fieldset>
         <input type="checkbox" name="regulamento" id="checkboxRegulamento">
         <label for="checkboxRegulamento">Li e concordo com o <span id="linkRegulamento">Regulamento</span></label>
-      <button id="cadastrar">Cadastrar</button>
+        <div class="botoes">
+          <input type="button" value="Cadastrar" id="cadastrar">
+          <input type="button" value="Limpar" id="limpar">
+        </div>
    </form>
   </section>
+
+
+  <section id="regulamento">
+    <div id="fechaContainer">
+      <span id="fecha"></span>
+    </div>
+    <article id='regulamento-bg-branco'>
+      <h1>Regulamento</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet omnis. Porro exercitationem quis minus inventore cum dolor necessitatibus accusantium facere culpa voluptatibus nihil ea ipsum voluptates labore minima officiis alias, magnam recusandae, et nesciunt aliquam. Aliquid facere amet, necessitatibus est itaque provident. Odit, illo nihil fugit ullam et libero.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam optio repellat earum nisi ipsa quia, aut magnam maxime impedit laborum autem beatae saepe suscipit incidunt, cumque nihil nobis ut corrupti, nostrum odit dolores. Accusantium, magni. Nisi corporis aliquam vel necessitatibus sunt, perferendis, voluptate nam a voluptatibus ipsa harum voluptas non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet omnis. Porro exercitationem quis minus inventore cum dolor necessitatibus accusantium facere culpa voluptatibus nihil ea ipsum voluptates labore minima officiis alias, magnam recusandae, et nesciunt aliquam. Aliquid facere amet, necessitatibus est itaque provident. Odit, illo nihil fugit ullam et libero.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam optio repellat earum nisi ipsa quia, aut magnam maxime impedit laborum autem beatae saepe suscipit incidunt, cumque nihil nobis ut corrupti, nostrum odit dolores. Accusantium, magni. Nisi corporis aliquam vel necessitatibus sunt, perferendis, voluptate nam a voluptatibus ipsa harum voluptas non.</p>
+      </article>
+    </section>
+    <section id="confirmacao">
+      <article id="confirmacao-bg-branco">
+        <p>Olá <span id="nome"></span>,</p>
+        <p>Seu cadastro foi realizado com sucesso!</p>
+        <p>Agora é torcer e ficar ligado que no dia
+          <time datetime="2020-">XXXXX</time> vamos sortear os 10 pares de ingressos!</p>
+          <p><a href="index.html" class="voltar"><span>Home</span></a></p>
+        </article>
+    </section>
 
   <footer>
     <section>
@@ -130,19 +156,6 @@
         Kaji</a> e <a href="https://github.com/lucas-silvestre-fatecsr" target="_blank">Lucas Silvestre</a></small>
   </footer>
   
-    
-  <section id="regulamento">
-    <div id="fechaContainer">
-      <span id="fecha"></span>
-    </div>
-    <article id='regulamento-bg-branco'>
-      <h1>Regulamento</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet omnis. Porro exercitationem quis minus inventore cum dolor necessitatibus accusantium facere culpa voluptatibus nihil ea ipsum voluptates labore minima officiis alias, magnam recusandae, et nesciunt aliquam. Aliquid facere amet, necessitatibus est itaque provident. Odit, illo nihil fugit ullam et libero.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam optio repellat earum nisi ipsa quia, aut magnam maxime impedit laborum autem beatae saepe suscipit incidunt, cumque nihil nobis ut corrupti, nostrum odit dolores. Accusantium, magni. Nisi corporis aliquam vel necessitatibus sunt, perferendis, voluptate nam a voluptatibus ipsa harum voluptas non.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet omnis. Porro exercitationem quis minus inventore cum dolor necessitatibus accusantium facere culpa voluptatibus nihil ea ipsum voluptates labore minima officiis alias, magnam recusandae, et nesciunt aliquam. Aliquid facere amet, necessitatibus est itaque provident. Odit, illo nihil fugit ullam et libero.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam optio repellat earum nisi ipsa quia, aut magnam maxime impedit laborum autem beatae saepe suscipit incidunt, cumque nihil nobis ut corrupti, nostrum odit dolores. Accusantium, magni. Nisi corporis aliquam vel necessitatibus sunt, perferendis, voluptate nam a voluptatibus ipsa harum voluptas non.</p>
-      </article>
-    </section>
   <script src="script.js"></script>
 </body>
 
