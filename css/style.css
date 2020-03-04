@@ -84,13 +84,6 @@ small a:hover {
 
 /* Bandas */
 
-.banda_01 {
-  float: left;
-}
-
-.banda_02 {
-  float: right;
-}
 
 .dia1 {
   float: left;
@@ -113,13 +106,14 @@ small a:hover {
 
 #bandas h3 {
   text-align: center;
+  font-size: 2em;
 
 }
 
 #bandas {
   width: 80%;
   margin: 0 auto ;
-  height: 700px;
+  height: 900px;
 }
 #bandas ul {
   margin: 0;
