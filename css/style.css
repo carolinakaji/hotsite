@@ -312,6 +312,7 @@ input[id="checkboxRegulamento"] {
   background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
+  z-index: 10;
   width: 100%;
   height: 100vh;
   visibility: hidden;
@@ -379,6 +380,7 @@ input[id="checkboxRegulamento"] {
   background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
+  z-index: 10;
   width: 100%;
   height: 100vh;
   visibility: hidden;
@@ -387,12 +389,11 @@ input[id="checkboxRegulamento"] {
 #confirmacao-bg-branco {
   overflow: auto;
   background: #fff;
-  height: 80%;
+  height: 85%;
   width: 50%;
   margin: 5% auto;
   position: relative;
-  padding: 20px 40px;
-  /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 43% 99%, 50% 75%, 0% 75%); */
+  padding: 20px 30px;
   clip-path: polygon(0 12%, 27% 18%, 55% 0, 70% 22%, 100% 12%, 91% 47%, 100% 80%, 71% 81%, 55% 94%, 23% 79%, 0 81%, 9% 50%);
   padding: 100px 80px;
 }
