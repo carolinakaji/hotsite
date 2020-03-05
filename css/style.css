@@ -91,7 +91,6 @@ small a:hover {
   border-right: 1px dashed #333;
   width: 49%;
   padding-right: 20px;
-  /* height: 100%; */
 }
 
 .dia2 {
@@ -106,7 +105,7 @@ small a:hover {
 
 #bandas h3 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
 
 }
 
@@ -383,13 +382,11 @@ input[id="checkboxRegulamento"] {
 #confirmacao-bg-branco {
   overflow: auto;
   background: #fff;
-  height: 85%;
   width: 50%;
   margin: 5% auto;
   position: relative;
-  padding: 20px 30px;
   clip-path: polygon(0 12%, 27% 18%, 55% 0, 70% 22%, 100% 12%, 91% 47%, 100% 80%, 71% 81%, 55% 94%, 23% 79%, 0 81%, 9% 50%);
-  padding: 100px 80px;
+  padding: 150px 80px;
 }
 
 #confirmacao p {
