@@ -1,20 +1,19 @@
-// Evento para o Regulamento
 let linkRegulamento = document.getElementsByClassName('linkRegulamento');
 let inputRadio = document.querySelectorAll('input[type="radio"]');
 let checkbox = document.querySelector('input[type="checkbox"]');
 
+
+// Evento para o Regulamento
 Array.from(linkRegulamento).forEach(elem => {
   elem.addEventListener('click', function(){
     regulamento.style.visibility = 'visible';
   });
 });
-
 fechaContainer.addEventListener('click', function(){
   regulamento.style.visibility = 'hidden';
 });
 
-// Evento para a confirmação do cadastro
-
+// Valida Campos do formulário:
 cadastrar.addEventListener('click', function(){
 if((nomeCompleto.value === '') || (nascimento.value === '') || (rgNumero.value === '') || (rgDigito.value === '') || (cpfNumero.value === '') || (endereco.value === '') || (checkbox.checked == false)){
   erroConfirmacao.style.visibility = 'visible';
@@ -44,4 +43,4 @@ limpar.addEventListener('click', function(){
   checkbox.checked = false;
 });
 
-// Valida Campos:
+
