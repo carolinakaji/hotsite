@@ -1,6 +1,12 @@
 // Evento para o Regulamento
-linkRegulamento.addEventListener('click', function(){
-  regulamento.style.visibility = 'visible';
+let linkRegulamento = document.getElementsByClassName('linkRegulamento');
+let inputRadio = document.querySelectorAll('input[type="radio"]');
+let checkbox = document.querySelector('input[type="checkbox"]');
+
+Array.from(linkRegulamento).forEach(elem => {
+  elem.addEventListener('click', function(){
+    regulamento.style.visibility = 'visible';
+  });
 });
 
 fechaContainer.addEventListener('click', function(){
@@ -10,7 +16,11 @@ fechaContainer.addEventListener('click', function(){
 // Evento para a confirmação do cadastro
 
 cadastrar.addEventListener('click', function(){
+if((nomeCompleto.value === '') || (nascimento.value === '') || (rgNumero.value === '') || (rgDigito.value === '') || (cpfNumero.value === '') || (endereco.value === '') || (checkbox.checked == false)){
+  erroConfirmacao.style.visibility = 'visible';
+} else {
   confirmacao.style.visibility = 'visible';
+}
 });
 
 limpar.addEventListener('click', function(){
@@ -31,7 +41,7 @@ limpar.addEventListener('click', function(){
   for(var i = 0; i < inputRadio.length; i++){
     inputRadio[i].checked = false;
   }
-
   checkbox.checked = false;
-
 });
+
+// Valida Campos:
