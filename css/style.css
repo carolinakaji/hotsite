@@ -47,7 +47,7 @@ header {
   padding: 30px 5px;
 }
 
-#navbar ul li a {
+#navbar ul li a, .indexRegulamento{
   font-size: 1em;
   font-weight: bold;
   letter-spacing: .1em;
@@ -60,6 +60,16 @@ header {
 #navbar ul li a:hover,
 small a:hover {
   color: #e31214;
+}
+
+.indexRegulamento {
+  cursor: pointer;
+  color: #fff;
+}
+
+.indexRegulamento:hover {
+  color: #e31214;
+  cursor: pointer;
 }
 
 /* Sobre */
@@ -245,12 +255,12 @@ form input[name="rgDigito"], form input[name="cpfDigito"] {
   margin-left: .5em ;
 }
 
-#linkRegulamento {
+.spanLinkRegulamento {
   cursor: pointer;
   color: #2d2dd8;
 }
 
-#linkRegulamento:hover {
+.spanLinkRegulamento:hover {
   color: #e31214;
   cursor: pointer;
 }
