@@ -18,7 +18,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html#sobre">Sobre</a></li>
         <li><a href="index.html#bandas">Bandas</a></li>
-        <li><span id="linkNavRegulamento" class="indexRegulamento">Regulamento</span></li>
+        <li><span class="indexRegulamento linkRegulamento">Regulamento</span></li>
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
@@ -131,7 +131,7 @@
         </ul>
       </fieldset>
       <input type="checkbox" name="regulamento" id="checkboxRegulamento">
-      <label for="checkboxRegulamento">Li e concordo com o <span id="linkRegulamento" class="spanLinkRegulamento">Regulamento</span></label>
+      <label for="checkboxRegulamento">Li e concordo com o <span class="spanLinkRegulamento linkRegulamento">Regulamento</span></label>
       <div class="botoes">
         <input type="button" value="Cadastrar" id="cadastrar">
         <input type="button" value="Limpar" id="limpar">
@@ -166,12 +166,19 @@
   </section>
 
   <section id="confirmacao">
-    <article id="confirmacao-bg-branco">
+    <article class="confirmacao-bg-branco">
       <p>Parabéns!!!</p>
       <p>Seu cadastro foi realizado com sucesso!</p>
       <p>Agora é torcer e ficar ligado que no dia
         <time datetime="2020-04-27">27/04/2020</time> vamos sortear os 10 pares de ingressos!</p>
       <p><a href="index.html" class="voltar"><span>Home</span></a></p>
+    </article>
+  </section>
+  <section id="erroConfirmacao">
+    <article class="confirmacao-bg-branco">
+      <p>Erro no cadastro!!!</p>
+      <p>Preencha todos os campos!</p>
+      <p><a href="cadastro.html" class="voltar"><span>Ok</span></a></p>
     </article>
   </section>
 
@@ -183,6 +190,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#bandas">Bandas</a></li>
+          <li><span class="footerRegulamento linkRegulamento">Regulamento</span></li>
           <li><a href="cadastro.html">Cadastro</a></li>
         </ul>
       </nav>
@@ -194,7 +202,7 @@
   </footer>
 
   <script src="script.js"></script>
-  <script src="regulamentoIndex.js"></script>
+
 </body>
 
 </html>
