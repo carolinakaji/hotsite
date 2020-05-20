@@ -1,3 +1,4 @@
+// Evento para o Regulamento
 linkRegulamento.addEventListener('click', function(){
   regulamento.style.visibility = 'visible';
 });
@@ -5,6 +6,8 @@ linkRegulamento.addEventListener('click', function(){
 fechaContainer.addEventListener('click', function(){
   regulamento.style.visibility = 'hidden';
 });
+
+// Evento para a confirmação do cadastro
 
 cadastrar.addEventListener('click', function(){
   confirmacao.style.visibility = 'visible';
