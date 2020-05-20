@@ -33,8 +33,8 @@ header {
   background: #000;
   margin: 0;
   height: 100px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
 }
 #navbar ul {
   text-align: right;
@@ -83,6 +83,7 @@ small a:hover {
 }
 
 #sobre p {
+  color: #ddd;
   font-size: 1.3em;
   line-height: 1.5;
   margin-left: auto;
@@ -90,7 +91,14 @@ small a:hover {
   letter-spacing: .04em;
   width: 80%;
 }
+#sobre p>a {
+  color: #ddd;
+}
 
+.sobreRegulamento:hover, #sobre p>a:hover {
+  color: #e31214;
+  cursor: pointer;
+}
 
 /* Bandas */
 
@@ -181,8 +189,9 @@ small a, footer a {
   color: #ddd;
 }
 
-footer a:hover {
+footer a:hover, .footerRegulamento:hover {
   color: #e31214;
+  cursor: pointer;
 }
 
 footer ul li {
@@ -389,7 +398,7 @@ input[id="checkboxRegulamento"] {
   visibility: hidden;
 }
 
-#confirmacao-bg-branco {
+.confirmacao-bg-branco {
   overflow: auto;
   background: #fff;
   width: 50%;
@@ -399,23 +408,24 @@ input[id="checkboxRegulamento"] {
   padding: 150px 80px;
 }
 
-#confirmacao p {
+#confirmacao p, #erroConfirmacao p {
   text-align: center;
   margin-top: 1.5em;
+  font-size: 1.4em;
 }
 
 #confirmacao .voltar {
   color: cornflowerblue;
 }
 
-#confirmacao .voltar span {
+#confirmacao .voltar span, #erroConfirmacao .voltar span {
   display: inline-block;
   height: 2em;
   padding: 10px 20px;
   border: 1px dotted cornflowerblue;
 }
 
-#confirmacao .voltar span:hover {
+#confirmacao .voltar span:hover, #erroConfirmacao .voltar span:hover {
   display: inline-block;
   height: 2em;
   padding: 10px 20px;
@@ -424,6 +434,13 @@ input[id="checkboxRegulamento"] {
   background: cornflowerblue;
 }
 
-#confirmacao p {
-  font-size: 1.4em;
+
+#erroConfirmacao {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
 }
